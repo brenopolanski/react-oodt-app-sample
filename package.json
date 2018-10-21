@@ -1,7 +1,8 @@
 {
   "main": "server.js",
   "scripts": {
-    "server": "node server.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client-install": "npm install --prefix app-sample",
     "client": "npm start --prefix app-sample",
     "dev": "concurrently \"npm run server\" \"npm run client\""
@@ -14,6 +15,7 @@
     "morgan": "^1.8.2"
   },
   "devDependencies": {
-    "concurrently": "^3.1.0"
+    "concurrently": "^3.1.0",
+    "nodemon": "^1.17.3"
   }
 }
