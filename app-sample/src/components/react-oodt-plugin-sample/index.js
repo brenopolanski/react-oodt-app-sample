@@ -38,7 +38,8 @@ export default class OODTSample extends Component {
 
     try {
       const res = await fetch(
-        `http://46.4.26.22:8012/fmprod/jaxrs/product?productId=${productId}`
+        // `http://46.4.26.22:8012/fmprod/jaxrs/product?productId=${productId}`
+        'http://localhost:9999/oodt' // fixed the cors
       );
       const json = await res.json();
 
@@ -62,7 +63,7 @@ export default class OODTSample extends Component {
     ) : error ? (
       <div>Error :(</div>
     ) : (
-      <JsonTable className="table" rows={product} />
+      <JsonTable rows={[product]} />
     );
   }
 }
