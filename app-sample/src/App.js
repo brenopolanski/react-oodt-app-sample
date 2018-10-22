@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import OODTPluginSample from './components/react-oodt-plugin-sample';
-import OODTPluginSample from 'react-oodt-plugin-sample';
+import OODTPluginSample from './components/react-oodt-plugin-sample';
+// import OODTPluginSample from 'react-oodt-plugin-sample';
 import './App.css';
 
 class App extends Component {
